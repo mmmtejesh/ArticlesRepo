@@ -1,0 +1,22 @@
+<html>
+Hello
+<head></head>
+<body>
+	<script src="https://viasat--devsup2.cs23.my.salesforce.com/lightning/lightning.out.js"></script>  
+	<div id="exedeusage"></div>
+  
+    <script>       
+        var url = "https://viasat--devsup2.lightning.force.com";
+        var token = "test";
+        console.log(token);
+		$Lightning.use("c:ExedeSubscriberApp", function() {
+			  $Lightning.createComponent("c:ExedeSubscriberUsageMeter", {},
+				 "exedeusage",
+				  function(cmp) {
+					 // do some stuff
+				  });
+		},url,token );              
+    </script>
+
+</body>
+</html>
